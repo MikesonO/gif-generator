@@ -1,0 +1,87 @@
+/* CUSTOM FONTS */
+@font-face {
+  font-family: "Nexa";
+  src: url("./fonts/Nexa-Trial-Black.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("./fonts/Nexa-Heavy.woff") format("woff");
+  font-weight: bold;
+}
+
+/* ELEMENT SELECTORS */
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: "Nexa", sans-serif;
+  font-weight: bold;
+}
+
+input{
+  width: 400px;
+  padding: .75rem;
+}
+
+header{
+  display: flex;
+  align-items: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+/* ID SELECTORS */
+#search{
+  display: flex;
+  position: relative;
+}
+
+#search input{
+  border: none;
+  border-radius: 5px;
+  padding-right: 45px;
+}
+
+#search button{
+  position: absolute;
+  height: 100%;
+  right: 0;
+  width:40px;
+  color: white;
+  animation: gradient 5s linear infinite;
+  background-image: linear-gradient(90deg,#ee7752,#e73c7e,#db5779,#ee7752,#e73c7e);
+  background-size: 400% 100%;
+  transform: scaleX(-1);
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: font-size .3s;
+}
+
+#search button:hover{
+  animation: gradient 1s linear infinite;
+  font-size: 1.45rem;
+}
+
+#logo{
+  width: 50px;
+}
+
+/* ANIMATION */
+@keyframes gradient {
+  0% { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; }
+}

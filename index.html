@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gif Generator</title>
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/25fd90afcd.js" crossorigin="anonymous"></script>
+  <!-- CSS LINK -->
+  <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-  <img src="#" alt="Random GIF">
-  <button>Click Me!</button>
+  <header>
+    <img id="logo" src="./images/logo.png">
+    <h1>GIPHY API - GIF GENERATOR</h1>
+  </header>
+  <main>
+    <div id="search">
+      <input type="text" placeholder="Search for a GIF"> <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <img id="generated-gif" src="#" alt="Random GIF">
+  </main>
   <script src="index.js"></script>
 </body>
+
 </html>
