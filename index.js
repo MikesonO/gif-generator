@@ -2,10 +2,10 @@ const gif = document.getElementById("generated-gif");
 const button = document.querySelector('button');
 const userInput = document.getElementById("search-input");
 
-gif.style.display = "none";
-
-
 button.addEventListener("click", ()=>{
+  if(userInput.value.trim() == ""){
+    location.reload();
+  }
 fetch(`https://api.giphy.com/v1/gifs/translate?api_key=XUilUesMKlBWTz8Yo6XWlgc92VHggh0e&s=${userInput.value}`, {
     mode: "cors"
   })
