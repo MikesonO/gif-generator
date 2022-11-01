@@ -21,8 +21,13 @@
 }
 
 /* ELEMENT SELECTORS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
-  padding-top: 2.5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,11 +36,13 @@ body{
   color: var(--white);
   font-family: "Nexa", sans-serif;
   font-weight: bold;
+  padding: 2rem;
 }
 
 header{
   display: flex;
   align-items: center;
+  padding-bottom: 1.5rem;
 }
 
 main{
@@ -46,11 +53,6 @@ main{
   gap: 3rem;
 }
 
-input{
-  width: 400px;
-  padding: .75rem;
-}
-
 /* ID SELECTORS */
 #logo{
   width: 50px;
@@ -59,12 +61,15 @@ input{
 #search{
   display: flex;
   position: relative;
+  width: 40%;
+  min-width: 350px;
 }
 
 #search input{
   border: none;
+  width: 100%;
+  padding: 12px 45px 12px 12px;
   border-radius: 5px;
-  padding-right: 45px;
 }
 
 #search button{
@@ -90,6 +95,24 @@ input{
   font-size: 1.45rem;
 }
 
+#generated-gif{
+  border: 2px solid var(--white);
+  width: 40%;
+  min-width: 350px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 580px) {
+
+  header{
+    font-size: .75rem;
+  }
+
+  #logo {
+    width: 40px;
+  }
+
+}
 
 /* ANIMATION */
 @keyframes gradient {
