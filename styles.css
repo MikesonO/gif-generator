@@ -13,6 +13,7 @@
 
 /* ELEMENT SELECTORS */
 body{
+  padding-top: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
