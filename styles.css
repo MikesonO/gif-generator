@@ -96,9 +96,14 @@ main{
 }
 
 #generated-gif{
-  border: 2px solid var(--white);
   width: 40%;
   min-width: 350px;
+}
+
+#error-msg{
+  max-width: 450px;
+  font-family: sans-serif;
+  display:none;
 }
 
 /* MEDIA QUERIES */
@@ -111,6 +116,11 @@ main{
   #logo {
     width: 40px;
   }
+
+
+#error-msg{
+  max-width: 350px;
+}
 
 }
 
